@@ -64,11 +64,25 @@ h1 {
 }
 
 nav {
-    position: absolute;
+    position: fixed;
     top: 10px;
-    left: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 15px;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
     z-index: 3;
+    animation: float 6s ease-in-out infinite;
 }
+
+@keyframes float {
+    0%, 100% { transform: translateX(-50%) translateY(0); }
+    50% { transform: translateX(-50%) translateY(5px); }
+}
+
 
 nav a {
     margin-right: 15px;
