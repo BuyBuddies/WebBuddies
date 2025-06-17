@@ -83,6 +83,7 @@ nav {
     50% { transform: translateX(-50%) translateY(5px); }
 }
 
+
 nav a {
     margin-right: 15px;
     color: #000;
